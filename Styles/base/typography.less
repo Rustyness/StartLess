@@ -1,0 +1,57 @@
+@import "colors.less";
+@import "variables.less";
+
+@baseSize: 0.4rem;
+
+@size1x: @baseSize;
+@size2x: @baseSize * 2;
+@size3x: @baseSize * 3;
+@size4x: @baseSize * 4;
+@size5x: @baseSize * 5;
+@size6x: @baseSize * 6;
+
+@light: 300;
+@regular: 400;
+@bold: 700;
+@bolder: 900;
+
+.textLeft() {text-align: left;}
+.textCenter() {text-align: center;}
+.textRight() {text-align: right;}
+
+
+h1, h2, h3 {
+    color: @black;
+}
+
+h1 {
+    line-height: @size6x;
+    font-size: @size4x;
+}
+
+h2 {
+    line-height: @size5x - 0.2;
+    font-size: @size4x - 0.2;
+}
+
+h3 {
+    line-height: @size3x;
+    font-size: @size2x;
+}
+
+/*
+.fontOpenSans {font-family: 'Open Sans', sans-serif;}
+.fontInsaniburger {font-family: 'Insaniburger', sans-serif;}
+
+@font-face {
+    font-family: 'Insaniburger';
+    src: url('@{FontsUrl}/Insaniburger.eot');
+    src: url('@{FontsUrl}/Insaniburger.eot?#iefix') format('embedded-opentype'),
+    url('@{FontsUrl}/Insaniburger.woff2') format('woff2'),
+    url('@{FontsUrl}/Insaniburger.woff') format('woff'),
+    url('@{FontsUrl}/Insaniburger.ttf') format('truetype'),
+    url('@{FontsUrl}/Insaniburger.svg#Insaniburger') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/

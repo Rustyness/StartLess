@@ -1,0 +1,93 @@
+@import "../base/colors.less";
+@import "../base/typography.less";
+@import "../helpers/mixins.less";
+
+/*#region Button Base */
+    .c-btnBasePress {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        outline: none;
+
+        .textCenter;
+        .borderRadius(5px);
+        .transition (@prop: all, @time: 0.2s, @ease: linear, @afterTime: 0s);
+    }
+/*#endregion */
+
+/*#region SizesPress */
+    .--smPress {
+        padding: 5px 15px;
+        font-size: @size3x;
+        font-weight: @regular;
+    }
+
+    .--mdPress {
+        padding: 10px 30px;
+        font-size: @size4x;
+        font-weight: @bold;
+    }
+
+    .--lgPress {
+        padding: 15px 45px;
+        font-size: @size5x;
+        font-weight: @bolder;
+    }
+/*#endregion */
+
+/*#region ColorsPress */
+    .--bluePress {
+        background: @blue;
+        color: @white;
+
+        &:hover {
+            box-shadow: 0 4px darken(@blue, 20%);
+            color: @white;
+        }
+
+        &:active{
+            box-shadow: 0 0 darken(@blue, 20%);
+        }
+    }
+
+    .--redPress {
+        background: @complement1;
+        color: @white;
+
+        &:hover {
+            box-shadow: 0 4px darken(@complement1, 20%);
+            color: @white;
+        }
+
+        &:active{
+            box-shadow: 0 0 darken(@complement1, 20%);
+        }
+    }
+
+    .--yellowPress {
+        background: @yellow;
+        color: @white;
+
+        &:hover {
+            box-shadow: 0 4px darken(@yellow, 20%);
+            color: @white;
+        }
+
+        &:active{
+            box-shadow: 0 0 darken(@yellow, 20%);
+        }
+    }
+/*#endregion */
+
+.c-button__pokemon {
+    &:extend(.c-btnBasePress);
+    //width:100%;
+
+        &:active{
+            top: 6px;
+        }
+}

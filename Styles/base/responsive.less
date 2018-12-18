@@ -1,0 +1,29 @@
+/*
+    1600 - 1920px - Desktops com monitores widescreen HD
+    1440 - 1599px - Desktops com monitores widescreen "larger"
+    1366 - 1439px - Desktops com monitores widescreen "medium"
+    1280 - 1335px - Desktops com monitores widescreen "small"
+    1024 - 1279px - Desktops com monitores boxed
+    992  - 1279px - Tela equivalente ao iPad Pro
+    768  - 991px  - Tela equivalente ao iPad
+    414  - 767px  - Tela equivalente ao iPhone6 Plus
+    375  - 431px  - Tela equivalente ao iPhone6
+    320  - 374px  - Tela equivalente ao iPhone5
+
+    ==========================================================
+
+    col-lg(@desktopHD)
+    col-md(@desktopWideLarger, @desktopWideMedium, @desktopWideSmall, @desktop)
+    col-sm(@tablet, @phablet)
+    col-sx(@phoneplus, @phone)
+*/
+
+@desktopHD: ~"(min-width: 1600px) and (max-width: 1919px)";
+@desktopLarger: ~"(min-width: 1440px) and (max-width: 1599px)";
+@desktopWideMedium: ~"(min-width: 1366px) and (max-width-1439px)";
+@desktopWideSmall: ~"(min-width: 1280px) and (max-width: 1365px)";
+@desktop: ~"(min-width: 992px) and (max-width: 1279px)";
+@tablet: ~"(min-width: 768px) and (max-width: 991px)";
+@phablet: ~"(min-width: 414px) and (max-width: 767px)";
+@phoneplus: ~"(min-width: 375px) and (max-width: 413px)";
+@phone: ~"(min-width: 320px) and (max-width: 374px)";

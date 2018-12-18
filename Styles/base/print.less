@@ -1,0 +1,47 @@
+﻿@import "colors.less";
+@import "../helpers/mixins.less";
+
+/*#region Base Typography.less */
+
+    @baseSize: 4.0pt;
+
+    @size1x: @baseSize;
+    @size2x: @baseSize * 2;
+    @size3x: @baseSize * 3;
+    @size4x: @baseSize * 4;
+    @size5x: @baseSize * 5;
+    @size6x: @baseSize * 6;
+
+    @light: 300;
+    @regular: 400;
+    @bold: 700;
+
+/*#endregion */
+
+@page {
+    margin: 0.5cm;
+}
+
+body {
+	font-size: @size5x;
+	font-weight: @light;
+	font-family: 'Roboto', sans-serif;
+	-webkit-print-color-adjust: exact; /*Enable background color in Chrome*/
+}
+
+nav, footer, video, audio, object, embed, .p-b-noPrint { 
+    display: none; 
+}
+
+a[href]:after {
+    content: none !important; /*Remove content of href to not print (url)*/
+}
+
+.p-b-print {
+    display: block;
+}
+
+.p-b-pageBreak {
+    page-break-before: always; /*Enable page break*/
+}
+

@@ -1,0 +1,29 @@
+/*#region B&W COLORS */
+    @white: #fff;
+    @lightGray: darken(@white, 20%);
+    @gray: darken(@white, 40%);
+    @black: darken(@white, 80%);
+/*#endregion */
+
+/*#region BRAND COLORS & COMPLEMENTARY COLORS */
+    @primary: #01b6ed;
+    @secondary: #ec9ef2;
+
+    @complement1: spin(@primary, 180);
+    @complement2: darken(spin(@primary, 180), 5%);
+/*#endregion */
+
+/*#region MONOCHROMATIC COLORS*/
+    @lighter1: lighten(spin(@primary, 5), 10%);
+    @lighter2: lighten(spin(@primary, 10), 20%);
+    @darker1: darken(spin(@primary, -5), 10%);
+    @darker2: darken(spin(@primary, -10), 20%);
+/*#endregion */
+
+/*#region SUPPORT FLAT COLORS */
+    @green: #2ecc71;
+    @red: #e74c3c;
+    @yellow: #f1c40f;
+    @blue: #3498db;
+    @orange: #e67e22;
+/*#endregion */
