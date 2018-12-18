@@ -1,9 +1,9 @@
-# Zemer Ui
+# StartLess
 Essa é uma plataforma com objetivo de auxíliar no desenvolvimento, escrita e organização de arquivos CSS e pastas de projetos Web.
 
 Nós estudamos e adaptamos para nossa realizade/necessidade alguns padrões que encontramos na comunidade que são: BEM, SMACSS e Namespace.
 
-## Por quê?
+## Why?
 Essa plataforma foi criada para auxiliar no desenvolvimento de sites.
 
 LESS
